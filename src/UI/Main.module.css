@@ -1,0 +1,13 @@
+.main {
+  width: 70%;
+  min-height: 10rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+@media (max-width: 71.25em) {
+  .main {
+    width: 100%;
+  }
+}

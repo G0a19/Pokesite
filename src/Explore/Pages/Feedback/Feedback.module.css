@@ -1,0 +1,161 @@
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+.form {
+  margin: 2rem auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form div {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.form div:last-child {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.form label {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form input {
+  width: 20rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.hebrew {
+  text-align: right;
+}
+
+.form textarea {
+  width: 40rem;
+  height: 10rem;
+  font-size: 1.5rem;
+}
+
+.form select {
+  width: 5rem;
+}
+
+.warning {
+  display: block;
+  position: absolute;
+  top: 100%;
+  color: red;
+  font-weight: 700;
+}
+
+.notWarning {
+  display: none;
+}
+
+.button {
+  width: 20rem;
+  /* align-self: center; */
+  position: relative;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  transition: all 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.feedback {
+  border-top: 2px solid black;
+}
+
+.feedback h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8rem;
+  margin-top: 2rem;
+}
+
+.rate {
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+}
+
+.review {
+  width: 100%;
+  min-height: 10rem;
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+.review h2 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.review p:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.review p:nth-child(3) {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+@media (max-width: 71.25em) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .title h1 {
+    font-size: 5rem;
+  }
+  .feedback h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .form textarea {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .form textarea {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,91 @@
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-size: 7rem;
+}
+
+.list {
+  border-top: 2px solid black;
+  margin-top: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+}
+
+.list li {
+  border-bottom: 2px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    rgba(241, 115, 83, 0.2),
+    rgba(255, 0, 0, 0.2)
+  );
+}
+
+.list div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list p {
+  position: relative;
+  left: 2%;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.star {
+  position: absolute;
+  left: 80%;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 71.25em) {
+  .star {
+    left: 90%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .title h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .title h1 {
+    font-size: 4rem;
+  }
+
+  .star {
+    left: 85%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .star {
+    left: 80%;
+  }
+}

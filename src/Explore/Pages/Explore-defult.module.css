@@ -1,0 +1,249 @@
+.main {
+  width: 70%;
+  min-height: 10rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  text-decoration: none;
+}
+.containerimgs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgs {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 2rem;
+  background: linear-gradient(#ffffff, #000000);
+  overflow: hidden;
+}
+
+.imgs:hover img {
+  transform: scale(1.2);
+}
+
+.imgs img {
+  width: 20rem;
+  transition: all 0.5s;
+}
+
+.form {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.form input {
+  width: 25%;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+
+.form input:focus {
+  width: 30%;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  top: 100%;
+}
+
+.form img {
+  margin-left: -2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.numberOfPokemons {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.pokemons {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fill, 20rem);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 18rem;
+  height: 18rem;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #ffffff 48%, black 50%, red 52%);
+}
+
+.pokemon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.pokemon p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+.explore {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.next {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 3rem 1rem;
+}
+
+.back {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 71.25em) {
+  .main {
+    width: 100%;
+  }
+
+  .form input {
+    width: 35%;
+  }
+
+  .form input:focus {
+    width: 40%;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .imgs img {
+    width: 15rem;
+  }
+
+  .form input {
+    width: 45%;
+  }
+
+  .form input:focus {
+    width: 50%;
+  }
+
+  .pokemons {
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, 17rem);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .imgs img {
+    width: 10rem;
+  }
+
+  .form input {
+    width: 55%;
+  }
+
+  .form input:focus {
+    width: 60%;
+  }
+
+  .pokemons {
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, 13rem);
+  }
+
+  .pokemon {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .pokemon p {
+    font-size: 1.2rem;
+  }
+
+  .next {
+    font-size: 1.7rem;
+  }
+
+  .back {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .form input {
+    width: 65%;
+  }
+
+  .form input:focus {
+    width: 70%;
+  }
+
+  .pokemons {
+    grid-template-columns: repeat(auto-fill, 15rem);
+  }
+
+  .next {
+    font-size: 1.3rem;
+  }
+
+  .back {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .imgs img {
+    width: 9rem;
+  }
+
+  .pokemons {
+    grid-template-columns: repeat(auto-fill, 10rem);
+  }
+
+  .pokemon {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .pokemon p {
+    font-size: 1.1rem;
+    position: relative;
+    top: -10%;
+  }
+}

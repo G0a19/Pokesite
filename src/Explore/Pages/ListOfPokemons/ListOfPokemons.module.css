@@ -1,0 +1,128 @@
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title h1 {
+  margin-top: 5rem;
+  font-size: 8rem;
+  text-transform: uppercase;
+}
+
+.title p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.title button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s;
+}
+
+.title button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.names {
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  background-color: rgb(189, 187, 187);
+}
+
+.link:hover {
+  background-color: rgb(189, 187, 187, 0.4);
+}
+
+.names li {
+  padding: 1rem 2rem;
+  list-style: none;
+  font-size: 2rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-weight: 700;
+}
+
+@media (max-width: 71.25em) {
+  .names {
+    width: 90%;
+    margin: 4rem;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .title h1 {
+    font-size: 6rem;
+  }
+
+  .title p {
+    font-size: 1.7rem;
+  }
+
+  .names {
+    width: 100%;
+    margin: 0rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 51.875em) {
+  .title h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 28.75em) {
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title p {
+    font-size: 1.4rem;
+  }
+
+  .title button {
+    font-size: 1.5rem;
+  }
+
+  .names {
+    grid-template-columns: repeat(auto-fill, 10rem);
+  }
+
+  .names li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+}
