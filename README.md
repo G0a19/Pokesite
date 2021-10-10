@@ -2,6 +2,8 @@
 
 Link to the project [Pokesite](https://pokesite-gal.netlify.app/).
 
+![Website photo](/src/img/website.png)
+
 ## Available Scripts
 
 Write npm install to install all the packages
