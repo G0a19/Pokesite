@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Loading from "./UI/Loading";
-import "./App.css";
 // import { pushNameHandler } from "./Store/Store";
 // import Pokemon from "./Explore/Pages/Pokemons/Pokemon";
 
