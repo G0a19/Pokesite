@@ -22,7 +22,7 @@ const Feedback = function () {
     const getDate = async function () {
       try {
         const call = await fetch(
-          "https://reviews-9da33-default-rtdb.firebaseio.com/reviews.json"
+          "https://reviews-58453-default-rtdb.firebaseio.com/reviews.json"
         );
         if (!call.ok) {
           setTitle("error, try again later");
@@ -92,7 +92,7 @@ const Feedback = function () {
       rate,
       description,
     };
-    fetch("https://reviews-9da33-default-rtdb.firebaseio.com/reviews.json", {
+    fetch("https://reviews-58453-default-rtdb.firebaseio.com/reviews.json", {
       method: "POST",
       body: JSON.stringify(review),
       headers: {
